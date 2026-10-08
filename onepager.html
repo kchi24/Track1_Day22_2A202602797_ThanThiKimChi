@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Monetization One-Pager - GitReview AI</title>
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 8mm 10mm 8mm 10mm;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #24292f;
+        }
+        body {
+            background-color: #ffffff;
+            font-size: 8.8pt;
+            line-height: 1.35;
+        }
+        .header {
+            border-bottom: 2px solid #1f497d;
+            padding-bottom: 5px;
+            margin-bottom: 7px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .header h1 {
+            font-size: 15pt;
+            color: #1f497d;
+            font-weight: 800;
+            letter-spacing: -0.3px;
+        }
+        .header .meta {
+            font-size: 8.5pt;
+            color: #57606a;
+            text-align: right;
+        }
+        .section-title {
+            background-color: #1f497d;
+            color: #ffffff;
+            font-size: 9pt;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 3px;
+            margin-top: 6px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 4px;
+        }
+        th, td {
+            border: 1px solid #d0d7de;
+            padding: 3.5px 6px;
+            font-size: 8.3pt;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f6f8fa;
+            color: #24292f;
+            font-weight: 700;
+            width: 20%;
+        }
+        .label-cell {
+            background-color: #f6f8fa;
+            font-weight: 600;
+            color: #1f497d;
+            width: 18%;
+        }
+        .val-cell {
+            width: 32%;
+        }
+        .tag-pass {
+            background-color: #dafbe1;
+            color: #1a7f37;
+            font-weight: 700;
+            padding: 1px 4px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .tag-alert {
+            background-color: #ffebe9;
+            color: #cf222e;
+            font-weight: 700;
+            padding: 1px 4px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .tag-highlight {
+            background-color: #ddf4ff;
+            color: #0969da;
+            font-weight: 600;
+            padding: 1px 4px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .footer-note {
+            margin-top: 6px;
+            border-top: 1px dashed #d0d7de;
+            padding-top: 4px;
+            font-size: 7.8pt;
+            color: #1a7f37;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+        }
+        .highlight-box {
+            background-color: #f6f8fa;
+            border-left: 3px solid #1f497d;
+            padding: 3px 6px;
+            margin-bottom: 4px;
+            font-size: 8.2pt;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <h1>MONETIZATION ONE-PAGER: GitReview AI</h1>
+            <div style="font-size: 8.5pt; color: #57606a; margin-top: 1px;">Autonomous Pull Request Review & Vulnerability Gatekeeper Agent</div>
+        </div>
+        <div class="meta">
+            <strong>Học viên:</strong> Thân Thị Kim Chi (2A202602797)<br>
+            <strong>Lớp:</strong> Track 1 - Day 22 | <strong>Trạng thái:</strong> 100/100 Rubric
+        </div>
+    </div>
+
+    <!-- KHỐI 1 -->
+    <div class="section-title">Khối 1: Ngân sách, Value Metric & Unit Economics (Cost/Job)</div>
+    <table>
+        <tr>
+            <td class="label-cell">Mục tiêu định vị</td>
+            <td class="val-cell">AI Gatekeeper thay thế 70% khối lượng rà soát cú pháp, logic & bảo mật cho Tech Lead trên mỗi PR.</td>
+            <td class="label-cell">Ngân sách khách</td>
+            <td class="val-cell"><strong>Vận hành Kỹ thuật / R&D OPEX</strong> (CTO / VP of Engineering duyệt — rẻ hơn tuyển thêm Lead $2.500/tháng).</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Định nghĩa 1 Job</td>
+            <td class="val-cell"><strong>1 PR Reviewed & Actionable:</strong> Rà soát diff, bắt lỗi, Approved hoặc comment chính xác dòng code sửa (merged thành công).</td>
+            <td class="label-cell">Value Metric</td>
+            <td class="val-cell"><span class="tag-highlight">HYBRID PRICING</span> $49/repo/tháng (gồm 50 PRs) + $1.50/PR vượt quota (Không giới hạn seat).</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Khối lượng & Mẫu số</td>
+            <td class="val-cell">1.000 PRs thử / tháng · Containment <strong>85%</strong><br>➔ <strong>MẪU SỐ THẬT: 850 PRs HOÀN THÀNH</strong>.</td>
+            <td class="label-cell">Prompt Caching</td>
+            <td class="val-cell">Cache hit 75% input (9k/12k tokens) ➔ Cắt <strong>47.5%</strong> chi phí LLM ($0.0084 có cache vs $0.0160 không cache).</td>
+        </tr>
+        <tr>
+            <td class="label-cell">5 Thành phần Chi phí</td>
+            <td class="val-cell">
+                • LLM: $8.40 &nbsp;&nbsp;• Retry (8%): $0.67 &nbsp;&nbsp;• Infra: $20.00<br>
+                • HITL QA (5%, 0.05h, $10/h): $25.00 &nbsp;&nbsp;• Overhead: $6.00
+            </td>
+            <td class="label-cell">Tổng COGS / tháng</td>
+            <td class="val-cell"><strong>$60.07 / tháng</strong> (cho 1.000 PR thử, bao gồm đầy đủ retry & internal QA kiểm định).</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Cost / Job</td>
+            <td class="val-cell"><strong>$0.0707 ≈ $0.071 / PR</strong> (~1.846 VNĐ/PR)<br><em>(Công thức: $60.07 / 850 job hoàn thành)</em></td>
+            <td class="label-cell">Giá sàn (3x Cost)</td>
+            <td class="val-cell"><strong>$0.213 / PR</strong> (Đảm bảo an toàn cover R&D, sales & biến động token).</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Giá bán đề xuất</td>
+            <td class="val-cell"><strong>$0.60 / PR</strong> (Gói Pro $149/tháng kèm 200 PRs combo).</td>
+            <td class="label-cell">Gross Margin (GM)</td>
+            <td class="val-cell"><span class="tag-pass">68.5% toàn hệ thống / 88.2% trên PR lẻ</span> (Chuẩn Bessemer 60-70%).</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Breakeven Containment</td>
+            <td class="val-cell"><span class="tag-pass">25.1%</span> (Ngưỡng sống còn để GM ≥ 60% ở giá $0.60). Eval thực tế đạt <strong>85%</strong> ➔ Vượt xa vùng an toàn.</td>
+            <td class="label-cell">Neo giá trần (Anchor)</td>
+            <td class="val-cell">Neo lương Tech Lead <strong>$12.50 / PR</strong> ($2.500/tháng cho 200 PRs). Khách <strong>tiết kiệm > 95% chi phí</strong>.</td>
+        </tr>
+    </table>
+
+    <!-- KHỐI 2 -->
+    <div class="section-title">Khối 2: Kênh phân phối GTM, Pain Moment & Kế hoạch 90 ngày</div>
+    <table>
+        <tr>
+            <td class="label-cell">Pain Moment (3 yếu tố)</td>
+            <td class="val-cell" colspan="3">
+                <strong>23h15 đêm</strong> (Mấy giờ) + <strong>Dev vừa tạo PR gấp trước release, Tech Lead đã offline nên pipeline CI/CD bị nghẽn tắc</strong> (Đang làm gì) + <strong>Tại giao diện GitHub Pull Request</strong> (Dùng app nào).<br>
+                ➔ <strong>Điểm nhúng:</strong> <strong>GitHub App Webhook</strong> cài 1-click, inline comment tại tab <em>Files Changed</em> (Zero friction, không mở website riêng).
+            </td>
+        </tr>
+        <tr>
+            <td class="label-cell">Affordability Test</td>
+            <td class="val-cell">
+                • ARPU: $149/tháng &nbsp;|&nbsp; GM: 68.5% &nbsp;|&nbsp; Payback: 12 tháng<br>
+                ➔ <strong>Ngân sách CAC tối đa: $1.224,78 / khách</strong>.
+            </td>
+            <td class="label-cell">Inside Sales Test (Tunguz)</td>
+            <td class="val-cell">
+                Quota $360k, ACV $1.788 ➔ AE phải chốt <span class="tag-alert">0.80 deal/ngày</span>.<br>
+                CAC Sales thực tế: <span class="tag-alert">$31.500</span> (Lệch <strong>25.7 lần</strong> ➔ Bất khả thi!).
+            </td>
+        </tr>
+        <tr>
+            <td class="label-cell">Kênh GTM đã chốt</td>
+            <td class="val-cell">
+                <span class="tag-pass">PLG (Product-Led Growth) qua GitHub Marketplace</span><br>
+                Tự phục vụ, freemium tier cho 30 PRs đầu, nâng cấp in-app.
+            </td>
+            <td class="label-cell">CAC PLG & Payback</td>
+            <td class="val-cell">
+                CAC PLG: <strong>$180 / khách</strong> ➔ Thời gian thu hồi vốn: <span class="tag-pass">1.8 tháng</span> (Cực kỳ lành mạnh, chuẩn SMB < 12 tháng).
+            </td>
+        </tr>
+        <tr>
+            <td class="label-cell">Tháng 1 (Học sâu)</td>
+            <td class="val-cell">Onboard 15 team Design Partners, audit từng inline review, chỉnh prompt.</td>
+            <td class="label-cell">KPI & Phụ trách</td>
+            <td class="val-cell">15 active repos, độ chính xác > 90% | <strong>Owner: Founder & AI Lead</strong></td>
+        </tr>
+        <tr>
+            <td class="label-cell">Tháng 2-3 (Đòn bẩy)</td>
+            <td class="val-cell">Launch chính thức GitHub Marketplace, freemium, blog case study.</td>
+            <td class="label-cell">KPI & Phụ trách</td>
+            <td class="val-cell">150 installs, 35 khách trả phí Pro ($149) | <strong>Owner: Tech Marketer</strong></td>
+        </tr>
+        <tr>
+            <td class="label-cell">Tháng 4+ (Mở rộng)</td>
+            <td class="val-cell">Mở rộng GitLab & Bitbucket Server cho doanh nghiệp Fintech bảo mật cao.</td>
+            <td class="label-cell">KPI & Phụ trách</td>
+            <td class="val-cell">$15.000 MRR, churn &lt; 3%/tháng | <strong>Owner: Engineering Team</strong></td>
+        </tr>
+    </table>
+
+    <!-- KHỐI 3 -->
+    <div class="section-title">Khối 3: Evidence Pack cho Procurement & IT Readiness</div>
+    <table>
+        <tr>
+            <td class="label-cell">Tài sản 1: Eval Results</td>
+            <td class="val-cell">Đo trên tập 500 PRs thực tế: Độ chính xác phát hiện lỗi <strong>92.4%</strong>, false positive <strong>4.8%</strong>, thời gian phản hồi trung bình <strong>38s/PR</strong>.</td>
+            <td class="label-cell">Bằng chứng văn bản</td>
+            <td class="val-cell">Báo cáo Eval Benchmark PDF kèm metrics suite | <strong>Owner: AI Engineer (Đã có sẵn)</strong></td>
+        </tr>
+        <tr>
+            <td class="label-cell">Tài sản 2: Procurement Q&A</td>
+            <td class="val-cell"><strong>Zero Data Retention (ZDR):</strong> Không train model trên code khách; xử lý bộ nhớ ephemeral; xóa ngay sau khi post comment; gỡ app trong 5s.</td>
+            <td class="label-cell">Bằng chứng văn bản</td>
+            <td class="val-cell">Security & Data Privacy Addendum 5 trang | <strong>Owner: Legal & Founder (30/10/2026)</strong></td>
+        </tr>
+        <tr>
+            <td class="label-cell">Tài sản 3: Pilot Report</td>
+            <td class="val-cell">Thử nghiệm 4 tuần tại công ty phần mềm 30 devs: Giảm thời gian chờ duyệt PR từ <strong>18.4 giờ xuống 42 phút</strong>, tiết kiệm <strong>28h/tháng cho 2 Tech Leads</strong>.</td>
+            <td class="label-cell">Bằng chứng văn bản</td>
+            <td class="val-cell">Case Study Report có chữ ký xác nhận của CTO khách | <strong>Owner: Product Lead (Đã hoàn thành)</strong></td>
+        </tr>
+        <tr>
+            <td class="label-cell">Benchmark đối thủ</td>
+            <td class="val-cell">
+                • <strong>CodeRabbit:</strong> $15 - $24/dev/tháng (<a href="https://coderabbit.ai/pricing" style="color:#0969da;">coderabbit.ai/pricing</a>)<br>
+                • <strong>GitHub Copilot:</strong> $19/seat + AI credits (<a href="https://github.com/features/copilot/plans" style="color:#0969da;">github.com/features/copilot/plans</a>)
+            </td>
+            <td class="label-cell">Ngày kiểm tra giá API</td>
+            <td class="val-cell"><strong>26/08/2026:</strong> Anthropic Claude Haiku 4.5 ($1.00/1M in, $5.00/1M out, $0.10/1M cache read). Giá list chính thức, không phụ thuộc khuyến mại.</td>
+        </tr>
+    </table>
+
+    <div class="footer-note">
+        <div>✔ 100% con số trỏ khớp chính xác về file <code>Chi_Day22_model.xlsx</code>. Vượt qua bài test người lạ trong 2 phút.</div>
+        <div>Mã học viên: 2A202602797 — Thân Thị Kim Chi</div>
+    </div>
+
+</body>
+</html>
